@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global AI Automation & Smart Ads</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS for animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global AI Automation & Smart Ads</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- AOS for animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800">
 
+<!-- Language Switcher -->
+<div class="fixed top-4 right-4 z-50">
+  <button class="px-3 py-1 bg-blue-500 text-white rounded-l" onclick="switchLang('en')">EN</button>
+  <button class="px-3 py-1 bg-gray-200 rounded-r" onclick="switchLang('ru')">RU</button>
+</div>
+
 <!-- Hero Section -->
 <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">AI Automation & Smart Ads For Any Business Worldwide</h1>
-  <p class="text-lg md:text-2xl mb-6" data-aos="fade-up">24-hour delivery. No calls. No meetings.</p>
+  <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down" data-lang="en">AI Automation & Smart Ads For Any Business Worldwide</h1>
+  <h1 class="text-4xl md:text-6xl font-bold mb-4 hidden" data-aos="fade-down" data-lang="ru">AI Автоматизация и Умная Реклама для Любого Бизнеса</h1>
+  <p class="text-lg md:text-2xl mb-6" data-aos="fade-up" data-lang="en">24-hour delivery. No calls. No meetings.</p>
+  <p class="text-lg md:text-2xl mb-6 hidden" data-aos="fade-up" data-lang="ru">Доставка за 24 часа. Без звонков. Без встреч.</p>
   <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
-    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get Free AI Audit</a>
-    <a href="https://t.me/YourTelegramBot" target="_blank" class="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition">Contact via Telegram</a>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" data-lang="en">Get Free AI Audit</a>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition hidden" data-lang="ru">Получить бесплатный AI аудит</a>
+    <a href="https://t.me/DgekAI_bot" target="_blank" class="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition">Contact via Telegram</a>
   </div>
 </section>
 
 <!-- Pain Points Section -->
 <section class="py-20 bg-gray-100">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Common Business Problems</h2>
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up" data-lang="en">Common Business Problems</h2>
+    <h2 class="text-3xl font-bold mb-12 hidden" data-aos="fade-up" data-lang="ru">Распространенные проблемы бизнеса</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">Too many manual tasks</div>
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">High marketing costs</div>
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">Slow sales</div>
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">Messy operations</div>
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="500">No automation</div>
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="600">Weak advertising</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100" data-lang="en">Too many manual tasks</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="100" data-lang="ru">Слишком много ручной работы</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200" data-lang="en">High marketing costs</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="200" data-lang="ru">Высокие маркетинговые расходы</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="300" data-lang="en">Slow sales</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="300" data-lang="ru">Медленные продажи</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="400" data-lang="en">Messy operations</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="400" data-lang="ru">Хаотичные процессы</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="500" data-lang="en">No automation</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="500" data-lang="ru">Нет автоматизации</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="600" data-lang="en">Weak advertising</div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hidden" data-aos="fade-up" data-aos-delay="600" data-lang="ru">Слабая реклама</div>
     </div>
   </div>
 </section>
 
 <!-- Solution Section -->
 <section class="py-20 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Our Solution</h2>
-  <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-    AI systems that save 20–100 hours monthly and increase sales by 20–300%.
-  </p>
+  <h2 class="text-3xl font-bold mb-6" data-aos="fade-up" data-lang="en">Our Solution</h2>
+  <h2 class="text-3xl font-bold mb-6 hidden" data-aos="fade-up" data-lang="ru">Наше решение</h2>
+  <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200" data-lang="en">AI systems that save 20–100 hours monthly and increase sales by 20–300%.</p>
+  <p class="text-xl max-w-3xl mx-auto hidden" data-aos="fade-up" data-aos-delay="200" data-lang="ru">AI-системы, которые экономят 20–100 часов в месяц и увеличивают продажи на 20–300%.</p>
 </section>
 
 <!-- Packages Section -->
 <section class="py-20 bg-gray-100">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Our Packages</h2>
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up" data-lang="en">Our Packages</h2>
+    <h2 class="text-3xl font-bold mb-12 hidden" data-aos="fade-up" data-lang="ru">Наши пакеты</h2>
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Starter -->
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="zoom-in">
-        <h3 class="text-2xl font-bold mb-4">Starter — $99</h3>
-        <ul class="mb-4 text-left">
+      <div class="bg-white p-8 rounded-xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in">
+        <h3 class="text-2xl font-bold mb-4" data-lang="en">Starter — $99</h3>
+        <h3 class="text-2xl font-bold mb-4 hidden" data-lang="ru">Старт — $99</h3>
+        <ul class="mb-4 text-left space-y-2" data-lang="en">
           <li>3 AI automations</li>
           <li>Simple AI chatbot</li>
           <li>10 ad creatives</li>
           <li>1 landing page section</li>
         </ul>
-        <p class="font-semibold mb-4">Delivery: 24 hours</p>
-        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Get Starter</a>
+        <ul class="mb-4 text-left space-y-2 hidden" data-lang="ru">
+          <li>3 AI автоматизации</li>
+          <li>Простой AI чатбот</li>
+          <li>10 рекламных креативов</li>
+          <li>1 секция лендинга</li>
+        </ul>
+        <p class="font-semibold mb-4" data-lang="en">Delivery: 24 hours</p>
+        <p class="font-semibold mb-4 hidden" data-lang="ru">Доставка: 24 часа</p>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-lang="en">Get Starter</a>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition hidden" data-lang="ru">Выбрать Старт</a>
       </div>
       <!-- Growth -->
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-2xl font-bold mb-4">Growth — $399</h3>
-        <ul class="mb-4 text-left">
+      <div class="bg-white p-8 rounded-xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-2xl font-bold mb-4" data-lang="en">Growth — $399</h3>
+        <h3 class="text-2xl font-bold mb-4 hidden" data-lang="ru">Рост — $399</h3>
+        <ul class="mb-4 text-left space-y-2" data-lang="en">
           <li>6 automations</li>
           <li>Full AI chatbot</li>
           <li>20 ad creatives</li>
           <li>Ad account analysis</li>
           <li>Email & WhatsApp auto-replies</li>
         </ul>
-        <p class="font-semibold mb-4">Delivery: 48 hours</p>
-        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Get Growth</a>
+        <ul class="mb-4 text-left space-y-2 hidden" data-lang="ru">
+          <li>6 автоматизаций</li>
+          <li>Полный AI чатбот</li>
+          <li>20 рекламных креативов</li>
+          <li>Анализ рекламного кабинета</li>
+          <li>Автоответы Email & WhatsApp</li>
+        </ul>
+        <p class="font-semibold mb-4" data-lang="en">Delivery: 48 hours</p>
+        <p class="font-semibold mb-4 hidden" data-lang="ru">Доставка: 48 часов</p>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-lang="en">Get Growth</a>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition hidden" data-lang="ru">Выбрать Рост</a>
       </div>
       <!-- Pro -->
-      <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-2xl font-bold mb-4">Pro — $1499</h3>
-        <ul class="mb-4 text-left">
+      <div class="bg-white p-8 rounded-xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-2xl font-bold mb-4" data-lang="en">Pro — $1499</h3>
+        <h3 class="text-2xl font-bold mb-4 hidden" data-lang="ru">Про — $1499</h3>
+        <ul class="mb-4 text-left space-y-2" data-lang="en">
           <li>10+ automations</li>
           <li>CRM integrations</li>
           <li>Advanced chatbots</li>
           <li>Meta & TikTok Smart Ads</li>
           <li>30-day AI content plan</li>
         </ul>
-        <p class="font-semibold mb-4">Delivery: 3–5 days</p>
-        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Get Pro</a>
+        <ul class="mb-4 text-left space-y-2 hidden" data-lang="ru">
+          <li>10+ автоматизаций</li>
+          <li>Интеграции CRM</li>
+          <li>Сложные чатботы</li>
+          <li>Meta & TikTok Smart Ads</li>
+          <li>AI контент-план на 30 дней</li>
+        </ul>
+        <p class="font-semibold mb-4" data-lang="en">Delivery: 3–5 days</p>
+        <p class="font-semibold mb-4 hidden" data-lang="ru">Доставка: 3–5 дней</p>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-lang="en">Get Pro</a>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition hidden" data-lang="ru">Выбрать Про</a>
       </div>
     </div>
   </div>
@@ -94,23 +140,33 @@
 
 <!-- How it works -->
 <section class="py-20 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">How It Works</h2>
+  <h2 class="text-3xl font-bold mb-12" data-aos="fade-up" data-lang="en">How It Works</h2>
+  <h2 class="text-3xl font-bold mb-12 hidden" data-aos="fade-up" data-lang="ru">Как это работает</h2>
   <div class="max-w-4xl mx-auto grid md:grid-cols-4 gap-8">
-    <div class="p-6" data-aos="fade-up" data-aos-delay="100">1. Fill the form</div>
-    <div class="p-6" data-aos="fade-up" data-aos-delay="200">2. Get AI audit</div>
-    <div class="p-6" data-aos="fade-up" data-aos-delay="300">3. Choose package</div>
-    <div class="p-6" data-aos="fade-up" data-aos-delay="400">4. Receive system in 24–48 hours</div>
+    <div class="p-6" data-aos="fade-up" data-aos-delay="100" data-lang="en">1. Fill the form</div>
+    <div class="p-6 hidden" data-aos="fade-up" data-aos-delay="100" data-lang="ru">1. Заполните форму</div>
+    <div class="p-6" data-aos="fade-up" data-aos-delay="200" data-lang="en">2. Get AI audit</div>
+    <div class="p-6 hidden" data-aos="fade-up" data-aos-delay="200" data-lang="ru">2. Получите AI аудит</div>
+    <div class="p-6" data-aos="fade-up" data-aos-delay="300" data-lang="en">3. Choose package</div>
+    <div class="p-6 hidden" data-aos="fade-up" data-aos-delay="300" data-lang="ru">3. Выберите пакет</div>
+    <div class="p-6" data-aos="fade-up" data-aos-delay="400" data-lang="en">4. Receive system in 24–48 hours</div>
+    <div class="p-6 hidden" data-aos="fade-up" data-aos-delay="400" data-lang="ru">4. Получите систему за 24–48 часов</div>
   </div>
 </section>
 
 <!-- Contact / Formspree Form -->
 <section id="contact" class="py-20 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Contact Us</h2>
+  <h2 class="text-3xl font-bold mb-8" data-aos="fade-up" data-lang="en">Contact Us</h2>
+  <h2 class="text-3xl font-bold mb-8 hidden" data-aos="fade-up" data-lang="ru">Свяжитесь с нами</h2>
   <form action="https://formspree.io/f/myzrjbgn" method="POST" class="max-w-2xl mx-auto flex flex-col gap-4 bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
-    <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded">
-    <input type="email" name="email" placeholder="Your Email" required class="border p-3 rounded">
-    <textarea name="message" placeholder="Your Message" required class="border p-3 rounded"></textarea>
-    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Send Message</button>
+    <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded" data-lang="en">
+    <input type="text" name="name" placeholder="Ваше имя" required class="border p-3 rounded hidden" data-lang="ru">
+    <input type="email" name="email" placeholder="Your Email" required class="border p-3 rounded" data-lang="en">
+    <input type="email" name="email" placeholder="Ваш Email" required class="border p-3 rounded hidden" data-lang="ru">
+    <textarea name="message" placeholder="Your Message" required class="border p-3 rounded" data-lang="en"></textarea>
+    <textarea name="message" placeholder="Ваше сообщение" required class="border p-3 rounded hidden" data-lang="ru"></textarea>
+    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-lang="en">Send Message</button>
+    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition hidden" data-lang="ru">Отправить</button>
   </form>
   <div class="mt-6" data-aos="fade-up" data-aos-delay="200">
     <a href="https://t.me/DgekAI_bot" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Start Telegram Bot</a>
@@ -124,7 +180,19 @@
 
 <script>
   AOS.init();
-</script>
 
+  function switchLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      if(el.getAttribute('data-lang') === lang){
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    });
+  }
+
+  // default English
+  switchLang('en');
+</script>
 </body>
 </html>
