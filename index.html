@@ -1,309 +1,120 @@
-<!-- ZIP CONTENT AS PLAIN FILES -->
-<!-- ================================================ -->
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global AI Automation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script defer src="./js/lang.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business — Автоматизация под ключ</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="lang.js"></script>
+    <script defer src="script.js"></script>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
 
-<!-- HEADER -->
-<header class="w-full bg-white shadow fixed top-0 left-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <h1 class="text-xl font-bold">AI Automation</h1>
-    <nav class="hidden md:flex gap-6 font-semibold">
-      <a href="index.html">Home</a>
-      <a href="packages.html">Packages</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+<body>
+
+<header>
+    <div class="logo">AI Business</div>
+
+    <nav>
+        <a href="#services" data-text="nav_services">Услуги</a>
+        <a href="#packages" data-text="nav_packages">Пакеты</a>
+        <a href="#about" data-text="nav_about">О нас</a>
+        <a href="#faq" data-text="nav_faq">FAQ</a>
+        <a href="#contacts" data-text="nav_contacts">Контакты</a>
     </nav>
-    <select id="langSwitcher" class="border p-2 rounded">
-      <option value="en">EN</option>
-      <option value="ru">RU</option>
-    </select>
-  </div>
-</header>
 
-<div class="h-20"></div>
-
-<!-- MAIN HERO -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4">
-  <h1 class="t-hero-title text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">AI Automation & Smart Ads</h1>
-  <p class="t-hero-sub text-lg md:text-2xl mb-6" data-aos="fade-up">24-hour delivery. No calls. No meetings.</p>
-  <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
-    <a href="contact.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition t-get-audit">Get Free AI Audit</a>
-    <a href="https://t.me/DgekAI_bot" target="_blank" class="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition t-contact-tg">Contact via Telegram</a>
-  </div>
-</section>
-
-<footer class="py-6 bg-gray-800 text-white text-center">2025 © Global AI Automation</footer>
-<script>AOS.init();</script>
-</body>
-</html>
-
-<!-- ================================================ -->
-<!-- packages.html -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Packages</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script defer src="./js/lang.js"></script>
-</head>
-<body class="bg-gray-100 font-sans text-gray-800">
-
-<header class="w-full bg-white shadow p-4 fixed top-0 left-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">AI Automation</h1>
-    <nav class="hidden md:flex gap-6 font-semibold">
-      <a href="index.html">Home</a>
-      <a href="packages.html">Packages</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <select id="langSwitcher" class="border p-2 rounded">
-      <option value="en">EN</option>
-      <option value="ru">RU</option>
-    </select>
-  </div>
-</header>
-<div class="h-20"></div>
-
-<section class="py-20 text-center">
-  <h2 class="t-pack-title text-3xl font-bold mb-12">Our Packages</h2>
-  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6">
-
-    <!-- Starter -->
-    <div class="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition" data-aos="zoom-in">
-      <h3 class="text-2xl font-bold t-pack1-title">Starter — $99</h3>
-      <ul class="mt-4 text-left leading-relaxed t-pack1-list">
-        <li>3 AI automations</li>
-        <li>Basic AI chatbot</li>
-        <li>10 advertising creatives</li>
-        <li>1 landing page section</li>
-      </ul>
-      <p class="font-semibold mt-4 t-pack-delivery">Delivery: 24 hours</p>
-      <a href="contact.html" class="block bg-blue-500 text-white mt-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition t-pack-btn">Choose</a>
+    <div class="lang-switch">
+        <button onclick="setLang('ru')">RU</button>
+        <button onclick="setLang('en')">EN</button>
     </div>
-
-    <!-- Growth -->
-    <div class="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition" data-aos="zoom-in" data-aos-delay="150">
-      <h3 class="text-2xl font-bold t-pack2-title">Growth — $399</h3>
-      <ul class="mt-4 text-left leading-relaxed t-pack2-list">
-        <li>6 AI automations</li>
-        <li>Full chatbot</li>
-        <li>20 ad creatives</li>
-        <li>Ad account analysis</li>
-        <li>Email & WhatsApp auto-replies</li>
-      </ul>
-      <p class="font-semibold mt-4 t-pack-delivery2">Delivery: 48 hours</p>
-      <a href="contact.html" class="block bg-blue-500 text-white mt-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition t-pack-btn2">Choose</a>
-    </div>
-
-    <!-- Pro -->
-    <div class="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition" data-aos="zoom-in" data-aos-delay="300">
-      <h3 class="text-2xl font-bold t-pack3-title">Pro — $1499</h3>
-      <ul class="mt-4 text-left leading-relaxed t-pack3-list">
-        <li>10+ AI automations</li>
-        <li>CRM integrations</li>
-        <li>Advanced chatbots</li>
-        <li>Meta & TikTok Ads</li>
-        <li>30-day content plan</li>
-      </ul>
-      <p class="font-semibold mt-4 t-pack-delivery3">Delivery: 3–5 days</p>
-      <a href="contact.html" class="block bg-blue-500 text-white mt-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition t-pack-btn3">Choose</a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="py-6 bg-gray-800 text-white text-center">2025 © Global AI Automation</footer>
-<script>AOS.init();</script>
-</body>
-</html>
-
-<!-- ================================================ -->
-<!-- about.html -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script defer src="./js/lang.js"></script>
-</head>
-<body class="bg-gray-50 font-sans text-gray-800">
-<header class="w-full bg-white shadow p-4 fixed top-0 left-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">AI Automation</h1>
-    <nav class="hidden md:flex gap-6 font-semibold">
-      <a href="index.html">Home</a>
-      <a href="packages.html">Packages</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <select id="langSwitcher" class="border p-2 rounded">
-      <option value="en">EN</option>
-      <option value="ru">RU</option>
-    </select>
-  </div>
 </header>
-<div class="h-20"></div>
 
-<section class="py-20 max-w-4xl mx-auto text-center">
-  <h2 class="text-3xl font-bold t-about-title mb-6">About Our Company</h2>
-  <p class="t-about-text text-lg leading-relaxed">We build AI systems to automate business operations, reduce costs and grow revenue.</p>
+<section class="hero">
+    <h1 data-text="hero_title">Автоматизируй бизнес с AI уже сегодня</h1>
+    <p data-text="hero_sub">Боты, системы, интеграции и маркетинг под ключ</p>
+
+    <a href="#packages" class="btn" data-text="hero_btn">Выбрать пакет</a>
 </section>
 
-<footer class="py-6 bg-gray-800 text-white text-center">2025 © Global AI Automation</footer>
-</body>
-</html>
 
-<!-- ================================================ -->
-<!-- contact.html -->
+<section id="services" class="section">
+    <h2 data-text="services_title">Наши услуги</h2>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script defer src="./js/lang.js"></script>
-</head>
-<body class="bg-gray-100 font-sans text-gray-800">
+    <div class="cards">
 
-<header class="w-full bg-white shadow p-4 fixed top-0 left-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">AI Automation</h1>
-    <nav class="hidden md:flex gap-6 font-semibold">
-      <a href="index.html">Home</a>
-      <a href="packages.html">Packages</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <select id="langSwitcher" class="border p-2 rounded">
-      <option value="en">EN</option>
-      <option value="ru">RU</option>
-    </select>
-  </div>
-</header>
-<div class="h-20"></div>
+        <div class="card">
+            <h3 data-text="s1_title">AI-чат боты</h3>
+            <p data-text="s1_desc">Создаем умных агентов для продаж, поддержки и автоматизации.</p>
+        </div>
 
-<section class="py-20 text-center">
-  <h2 class="t-contact-title text-3xl font-bold mb-8">Contact Us</h2>
-  <form action="https://formspree.io/f/myzrjbgn" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg flex flex-col gap-4">
-    <input name="name" class="border p-3 rounded" type="text" placeholder="Your Name" required>
-    <input name="email" class="border p-3 rounded" type="email" placeholder="Your Email" required>
-    <textarea name="message" class="border p-3 rounded" placeholder="Your Message" required></textarea>
-    <button class="bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition t-send-btn">Send</button>
-  </form>
+        <div class="card">
+            <h3 data-text="s2_title">Автоворонки</h3>
+            <p data-text="s2_desc">Построение цепочек касаний, автоматизация лидогенерации.</p>
+        </div>
 
-  <a href="https://t.me/DgekAI_bot" target="_blank" class="inline-block mt-6 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition t-tg-btn">Telegram Bot</a>
+        <div class="card">
+            <h3 data-text="s3_title">Сайты и лендинги</h3>
+            <p data-text="s3_desc">Стильные, быстрые, продающие сайты с AI-интеграциями.</p>
+        </div>
+
+    </div>
 </section>
 
-<footer class="py-6 bg-gray-800 text-white text-center">2025 © Global AI Automation</footer>
+
+<section id="packages" class="section">
+    <h2 data-text="packages_title">Наши пакеты</h2>
+
+    <div class="packages">
+
+        <div class="pack">
+            <h3 data-text="p1_title">Start</h3>
+            <ul>
+                <li data-text="p1_1">AI-бот</li>
+                <li data-text="p1_2">Лендинг</li>
+                <li data-text="p1_3">Мини-воронка</li>
+            </ul>
+            <button class="btn" onclick="openForm('Start')" data-text="p_btn">Оставить заявку</button>
+        </div>
+
+        <div class="pack">
+            <h3 data-text="p2_title">Business</h3>
+            <ul>
+                <li data-text="p2_1">AI-бот PRO</li>
+                <li data-text="p2_2">Сайт PRO</li>
+                <li data-text="p2_3">Автоворонка</li>
+            </ul>
+            <button class="btn" onclick="openForm('Business')" data-text="p_btn">Оставить заявку</button>
+        </div>
+
+        <div class="pack">
+            <h3 data-text="p3_title">Ultimate</h3>
+            <ul>
+                <li data-text="p3_1">Полная автоматизация</li>
+                <li data-text="p3_2">AI-персонал</li>
+                <li data-text="p3_3">Маркетинг + запуск</li>
+            </ul>
+            <button class="btn" onclick="openForm('Ultimate')" data-text="p_btn">Оставить заявку</button>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contacts" class="section">
+    <h2 data-text="contact_title">Связаться с нами</h2>
+
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="msg" placeholder="Сообщение" required></textarea>
+
+        <button class="btn" type="submit" data-text="contact_btn">Отправить</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 AI Business</p>
+</footer>
+
 </body>
 </html>
-
-<!-- ================================================ -->
-<!-- js/lang.js -->
-
-const translations = {
-  en: {
-    "t-hero-title": "AI Automation & Smart Ads",
-    "t-hero-sub": "24-hour delivery. No calls. No meetings.",
-    "t-get-audit": "Get Free AI Audit",
-    "t-contact-tg": "Contact via Telegram",
-
-    /* Packages */
-    "t-pack-title": "Our Packages",
-    "t-pack1-title": "Starter — $99",
-    "t-pack2-title": "Growth — $399",
-    "t-pack3-title": "Pro — $1499",
-
-    "t-pack-delivery": "Delivery: 24 hours",
-    "t-pack-delivery2": "Delivery: 48 hours",
-    "t-pack-delivery3": "Delivery: 3–5 days",
-
-    "t-pack-btn": "Choose",
-    "t-pack-btn2": "Choose",
-    "t-pack-btn3": "Choose",
-
-    /* About */
-    "t-about-title": "About Our Company",
-    "t-about-text": "We build AI systems to automate business operations, reduce costs and grow revenue.",
-
-    /* Contact */
-    "t-contact-title": "Contact Us",
-    "t-send-btn": "Send",
-    "t-tg-btn": "Telegram Bot"
-  },
-
-  ru: {
-    "t-hero-title": "AI Автоматизация и Умная Реклама",
-    "t-hero-sub": "Доставка за 24 часа. Без звонков. Без встреч.",
-    "t-get-audit": "Получить AI аудит",
-    "t-contact-tg": "Связаться в Telegram",
-
-    /* Packages */
-    "t-pack-title": "Наши пакеты",
-    "t-pack1-title": "Старт — $99",
-    "t-pack2-title": "Рост — $399",
-    "t-pack3-title": "Про — $1499",
-
-    "t-pack-delivery": "Доставка: 24 часа",
-    "t-pack-delivery2": "Доставка: 48 часов",
-    "t-pack-delivery3": "Доставка: 3–5 дней",
-
-    "t-pack-btn": "Выбрать",
-    "t-pack-btn2": "Выбрать",
-    "t-pack-btn3": "Выбрать",
-
-    /* About */
-    "t-about-title": "О компании",
-    "t-about-text": "Мы создаём AI-системы для автоматизации бизнеса, снижения затрат и роста продаж.",
-
-    /* Contact */
-    "t-contact-title": "Свяжитесь с нами",
-    "t-send-btn": "Отправить",
-    "t-tg-btn": "Telegram бот"
-  }
-};
-
-const langSwitcher = document.getElementById("langSwitcher");
-
-function applyTranslations(lang) {
-  document.querySelectorAll("[class*='t-']").forEach(el => {
-    el.classList.forEach(cls => {
-      if (translations[lang][cls]) {
-        el.textContent = translations[lang][cls];
-      }
-    });
-  });
-}
-
-langSwitcher.addEventListener("change", e => {
-  applyTranslations(e.target.value);
-  localStorage.setItem("lang", e.target.value);
-});
-
-window.onload = () => {
-  const saved = localStorage.getItem("lang") || "en";
-  langSwitcher.value = saved;
-  applyTranslations(saved);
-};
